@@ -1,0 +1,81 @@
+mat-drawer {
+  width: 230px;
+  background-color: #000000c9;
+}
+mat-drawer-container {
+  height: 100%;
+}
+
+.drawer-title {
+  color: white;
+  background-color: #00000087;
+  padding: 10px 0px;
+}
+
+.drawer-left-content {
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: 'Fredericka the Great', cursive;
+  color: white;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 45px;
+}
+
+h3 {
+  font-family: 'Jockey One', sans-serif;
+  // font-family: 'Audiowide', cursive;
+  font-size: 26px;
+  margin: 0%;
+}
+
+h4 {
+  font-size: 36px;
+  color: white;
+  font-family: 'Jockey One', sans-serif;
+}
+
+mat-card {
+  height: 100%;
+}
+
+mat-card-content {
+  // margin-bottom: 60px;
+  height: 100px;
+}
+
+.r-content-width {
+  margin-top: 35px;
+  width: 100%;
+}
+
+.stack-img {
+  height: 75px;
+}
+
+.stack {
+  background-color: #000000c9;
+  padding: 20px 0;
+}
+
+.projects {
+  padding: 0px 50px;
+}
+
+.darken {
+  background-color: #000000c9;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+}

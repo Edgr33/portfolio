@@ -1,0 +1,26 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <div class="text-center drawer-title">
+      <img class="w-50 h-100 test" src="../../assets/icon.png" alt="">
+      <h1>Eduardo Gómez R.</h1>
+      <h3>Desarrollador Frontend</h3>
+    </div>
+    <div class="drawer-left-content">
+      <h4>Sobre Mi</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque est eros, 
+        placerat ac ullamcorper luctus, fringilla id mi. Donec tristique mi non lorem laoreet, 
+        vel hendrerit velit tristique. Integer vitae ligula neque. In venenatis purus sit amet 
+        pharetra semper. Nam nibh dui, interdum sit amet felis sit amet, tincidunt rhoncus dui. 
+        Donec vestibulum a est et convallis. Pellentesque et mi sit 
+        amet tortor mattis consequat nec ut lacus.</p>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content class="pe-0">
+    <div class="position-absolute div-bg">
+    </div>
+    <div class="position-absolute">
+      <!-- CONTENT -->
+      <router-outlet (activate)="onActivate($event)"></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

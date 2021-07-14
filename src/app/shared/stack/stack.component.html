@@ -1,0 +1,39 @@
+<div class="d-flex justify-content-center r-content-width mb-3">
+  <h2 class="">Mi stack tecnológico</h2>
+</div>
+<div class="d-flex justify-content-center stack">
+  <img class="stack-img" src="../../assets/st1.png" alt="">
+  <img class="stack-img" src="../../assets/st2.png" alt="">
+  <img class="stack-img" src="../../assets/st3.png" alt="">
+  <img class="stack-img" src="../../assets/st4.png" alt="">
+</div>
+<div class="d-flex justify-content-center stack">
+  <img class="stack-img" src="../../assets/st5.png" alt="">
+  <img class="stack-img" src="../../assets/st6.png" alt="">
+  <img class="stack-img" src="../../assets/st7.png" alt="">
+  <img class="stack-img" src="../../assets/st8.png" alt="">
+  <img class="stack-img" src="../../assets/st9.png" alt="">
+</div>
+<div class="d-flex justify-content-center stack">
+  <img class="stack-img" src="../../assets/st10.png" alt="">
+  <img class="stack-img" src="../../assets/st11.png" alt="">
+</div>
+<div class="d-flex justify-content-center r-content-width mb-3">
+  <h2 class="">Mis Proyectos</h2>
+</div>
+<div class="row projects w-100">
+  <div *ngFor="let project of projects" class="col">
+    <mat-card class="darken example-card">
+      <mat-card-header class="text-center justify-content-center">
+        <mat-card-title><h4>{{project.title}}</h4></mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="project.images[0]" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>{{project.shortDesc}}</p>
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <a mat-raised-button color="accent" [routerLink]="['/project-details', project.id]">Ver Detalle</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="container">
+  <h3 class="mb-5">{{project.title}}</h3>
+
+  <div class="row darken">
+    <div class="col">
+      <h4>Tecnologías Utilizadas: <span>{{project.techs}}</span></h4>
+
+      <h4>Enlace a Aplicación: <a [href]="project.urlApp" target="_blank"
+          class="text-decoration-none">{{project.urlApp}}</a></h4>
+
+      <h4>Enlace a API: <a [href]="project.urlApi" target="_blank" class="text-decoration-none">{{project.urlApi}}</a>
+      </h4>
+
+      <div class="">
+        <h4>Descripcion: <span class="">{{project.description}}</span></h4>
+      </div>
+    </div>
+    <div class="col">
+      <h4 class="text-center mb-3">Imágenes</h4>
+      <!-- image -->
+      <!-- <img src="" alt="imagen"> -->
+      <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img [src]="project.images[0]" class="d-block w-100" alt="...">
+          </div>
+          <div *ngFor="let image of images" data-bs-interval="3000" class="carousel-item">
+            <img [src]="image" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <a mat-raised-button color="primary" class="mt-3" routerLink="/home">Volver</a>
+</div>
