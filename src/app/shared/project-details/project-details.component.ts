@@ -34,8 +34,4 @@ export class ProjectDetailsComponent implements OnInit {
     });
   }
 
-  indexToString(num: number) {
-    num.toString()
-  }
-
 }
