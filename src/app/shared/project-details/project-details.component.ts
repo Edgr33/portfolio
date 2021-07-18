@@ -3,6 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Project } from 'src/app/project.model';
 import { ProjectsService } from '../services/projects.service';
 
+declare var $: any;
+
 @Component({
   selector: 'app-project-details',
   templateUrl: './project-details.component.html',
@@ -30,7 +32,9 @@ export class ProjectDetailsComponent implements OnInit {
       this.images = [...this.project.images]
       console.log(this.project.images)
       this.images.splice(0, 1)
-      // // console.log(this.images)
+      // console.log(this.images)
+
+      $('.carousel').carousel()
     });
   }
 
